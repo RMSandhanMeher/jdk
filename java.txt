@@ -1,0 +1,8 @@
+java
+sql
+jdbc 
+jsp
+servlet
+jsf
+hibernate
+ejb

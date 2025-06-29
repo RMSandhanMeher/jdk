@@ -1,0 +1,46 @@
+make the website internationalize which mean i18n 
+support for multilanguage 
+support for multizone
+and feature like text to voice 
+there are libraries supporting i18n in jsf maven icu4j
+
+struct a java web framework based on mvc now 
+java jsf and ajax why 
+
+AJAX just uses a combination of:
+A browser built-in XMLHttpRequest object (to request data from a web server)
+JavaScript and HTML DOM (to display or use the data)
+
+The XMLHttpRequest Object
+The XMLHttpRequest object can be used to request data from a web server.
+
+The XMLHttpRequest object is a developers dream, because you can:
+
+Update a web page without reloading the page
+Request data from a server - after the page has loaded
+Receive data from a server  - after the page has loaded
+Send data to a server - in the background
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+};
+xhttp.open("GET", "filename", true);
+xhttp.send();
+
+Key Differences:
+| Feature | fetch | XMLHttpRequest | 
+| API Style | Modern, promise-based | Older, callback-based | 
+| Syntax | Cleaner and more readable | Verbose and less intuitive | 
+| Streaming | Supports streaming responses | Buffers entire response | 
+| CORS Handling | More flexible with mode options | Requires manual setup | 
+| Request/Response Handling | Uses Request and Response objects | Uses event-based model | 
+| Progress Events | Not supported (yet) | Supported (e.g., onprogress) | 
+| Timeouts | Requires AbortController | Built-in timeout property | 
+| Browser Support | Modern browsers only | Supported in all browsers | 
+
+
+

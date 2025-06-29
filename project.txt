@@ -1,0 +1,10 @@
+project
+--------------
+
+doctor 
+the doctor need to avail all the possible future days available 
+ from to numberof slot date
+
+the patient 
+---------
+see the approved slot and see the current slot number his/her slot when slot is booked it also get notify by mail and download the appointment slip page as pdf and if possible make it an internationalization now 
