@@ -1,0 +1,50 @@
+INSERT INTO Providers (
+    provider_id, provider_name, hospital_name, email, address, city, state, zip_code, status, created_at
+) VALUES
+('P1003', 'Dr. Alok Mehta', 'AIIMS', 'alok.m@aiims.edu', 'AIIMS Campus', 'Delhi', 'Delhi', '110029', 'APPROVED', NOW()),
+('P1004', 'Dr. Neha Reddy', 'Manipal Hospitals', 'neha.r@manipal.com', 'Sector 7, JP Nagar', 'Bangalore', 'Karnataka', '560078', 'PENDING', NOW()),
+('P1005', 'Dr. Arjun Desai', 'Max Healthcare', 'arjun.d@max.com', 'Max Complex', 'Noida', 'Uttar Pradesh', '201301', 'APPROVED', NOW()),
+('P1006', 'Dr. Kavita Sharma', 'Narayana Health', 'kavita.s@narayana.com', 'NH Towers', 'Hyderabad', 'Telangana', '500081', 'PENDING', NOW()),
+('P1007', 'Dr. Sameer Khan', 'Care Hospitals', 'sameer.k@care.com', 'Near Railway Station', 'Pune', 'Maharashtra', '411001', 'REJECTED', NOW()),
+('P1008', 'Dr. Meera Joshi', 'Medanta', 'meera.j@medanta.com', 'Sector 38', 'Gurgaon', 'Haryana', '122001', 'APPROVED', NOW()),
+('P1009', 'Dr. Ravi Singh', 'KIMS Hospitals', 'ravi.s@kims.com', 'KIMS Lane', 'Chennai', 'Tamil Nadu', '600001', 'APPROVED', NOW()),
+('P1010', 'Dr. Shalini Das', 'Columbia Asia', 'shalini.d@columbia.com', 'Ring Road', 'Kochi', 'Kerala', '682001', 'PENDING', NOW()),
+('P1011', 'Dr. Ashok Patil', 'Global Hospitals', 'ashok.p@global.com', 'Health City', 'Lucknow', 'Uttar Pradesh', '226001', 'APPROVED', NOW()),
+('P1012', 'Dr. Anjali Gupta', 'Sunshine Hospitals', 'anjali.g@sunshine.com', 'Sunshine Towers', 'Indore', 'Madhya Pradesh', '452001', 'REJECTED', NOW()),
+('P1013', 'Dr. Rakesh Yadav', 'Ruby Hall Clinic', 'rakesh.y@rubyhall.com', 'Ruby Rd', 'Pune', 'Maharashtra', '411004', 'APPROVED', NOW()),
+('P1014', 'Dr. Preeti Nair', 'SevenHills Hospital', 'preeti.n@sevenhills.com', 'Seven Hills Area', 'Mumbai', 'Maharashtra', '400059', 'PENDING', NOW()),
+('P1015', 'Dr. Sunil Arora', 'Lilavati Hospital', 'sunil.a@lilavati.com', 'Bandra West', 'Mumbai', 'Maharashtra', '400050', 'APPROVED', NOW()),
+('P1016', 'Dr. Anju George', 'Jaslok Hospital', 'anju.g@jaslok.com', 'Pedder Road', 'Mumbai', 'Maharashtra', '400026', 'APPROVED', NOW()),
+('P1017', 'Dr. Mohan Iyer', 'Sankara Nethralaya', 'mohan.i@sankara.com', 'College Rd', 'Chennai', 'Tamil Nadu', '600006', 'PENDING', NOW()),
+('P1018', 'Dr. Priya Rathi', 'Shankar Hospital', 'priya.r@shankar.com', 'BTM Layout', 'Bangalore', 'Karnataka', '560076', 'REJECTED', NOW()),
+('P1019', 'Dr. Vikram Chauhan', 'HCG Cancer Hospital', 'vikram.c@hcg.com', 'Navrangpura', 'Ahmedabad', 'Gujarat', '380009', 'APPROVED', NOW()),
+('P1020', 'Dr. Aarti Kulkarni', 'Sterling Hospitals', 'aarti.k@sterling.com', 'Ring Road', 'Surat', 'Gujarat', '395001', 'PENDING', NOW());
+INSERT INTO Providers (
+    provider_id, provider_name, hospital_name, email, address, city, state, zip_code, status, created_at
+) VALUES
+('P1021', 'Dr. Ritu Sharma', 'Apollo Hospitals', 'ritu.s@apollo.com', 'Greenfield Area', 'Delhi', 'Delhi', '110060', 'APPROVED', NOW()),
+('P1022', 'Dr. Nikhil Roy', 'Fortis Hospital', 'nikhil.r@fortis.com', 'Sector 62', 'Noida', 'Uttar Pradesh', '201309', 'APPROVED', NOW()),
+('P1023', 'Dr. Tanya Mehra', 'BLK Hospital', 'tanya.m@blk.com', 'Rajendra Place', 'Delhi', 'Delhi', '110008', 'APPROVED', NOW()),
+('P1024', 'Dr. Karan Kapoor', 'Medico Hospitals', 'karan.k@medico.com', 'MG Road', 'Bangalore', 'Karnataka', '560001', 'APPROVED', NOW()),
+('P1025', 'Dr. Sneha Dutta', 'Heritage Hospital', 'sneha.d@heritage.com', 'Gomti Nagar', 'Lucknow', 'Uttar Pradesh', '226010', 'APPROVED', NOW()),
+('P1026', 'Dr. Ankit Verma', 'Apex Hospital', 'ankit.v@apex.com', 'GT Road', 'Kanpur', 'Uttar Pradesh', '208012', 'APPROVED', NOW()),
+('P1027', 'Dr. Mehul Shah', 'Shalby Hospital', 'mehul.s@shalby.com', 'Satellite', 'Ahmedabad', 'Gujarat', '380015', 'APPROVED', NOW()),
+('P1028', 'Dr. Sujata Rao', 'Amrita Hospital', 'sujata.r@amrita.com', 'AIMS Campus', 'Kochi', 'Kerala', '682041', 'APPROVED', NOW()),
+('P1029', 'Dr. Rajeev Menon', 'Aster Medcity', 'rajeev.m@aster.com', 'South Chittoor', 'Kochi', 'Kerala', '682027', 'APPROVED', NOW()),
+('P1030', 'Dr. Nisha Thomas', 'Rainbow Children Hospital', 'nisha.t@rainbow.com', 'Banjara Hills', 'Hyderabad', 'Telangana', '500034', 'APPROVED', NOW()),
+('P1031', 'Dr. Harsh Vardhan', 'Breach Candy Hospital', 'harsh.v@breachcandy.com', 'Breach Candy', 'Mumbai', 'Maharashtra', '400026', 'APPROVED', NOW()),
+('P1032', 'Dr. Leela Iyer', 'Kokilaben Hospital', 'leela.i@kokilaben.com', 'Andheri West', 'Mumbai', 'Maharashtra', '400053', 'APPROVED', NOW()),
+('P1033', 'Dr. Aakash Jain', 'Batra Hospital', 'aakash.j@batra.com', 'Tughlakabad Institutional Area', 'Delhi', 'Delhi', '110062', 'APPROVED', NOW()),
+('P1034', 'Dr. Bhavna Joshi', 'CareMax Hospital', 'bhavna.j@caremax.com', 'Civil Lines', 'Nagpur', 'Maharashtra', '440001', 'APPROVED', NOW()),
+('P1035', 'Dr. Raj Kumar', 'SRM Hospital', 'raj.k@srm.com', 'SRM Nagar', 'Chennai', 'Tamil Nadu', '603203', 'APPROVED', NOW()),
+('P1036', 'Dr. Priyanka Shah', 'Metro Hospital', 'priyanka.s@metro.com', 'Sector 11', 'Noida', 'Uttar Pradesh', '201301', 'APPROVED', NOW()),
+('P1037', 'Dr. Gaurav Mishra', 'Sunshine Hospitals', 'gaurav.m@sunshine.com', 'Begumpet', 'Hyderabad', 'Telangana', '500016', 'APPROVED', NOW()),
+('P1038', 'Dr. Sangeeta Chauhan', 'Sahara Hospital', 'sangeeta.c@sahara.com', 'Gomti Nagar', 'Lucknow', 'Uttar Pradesh', '226010', 'APPROVED', NOW()),
+('P1039', 'Dr. Rohit Saxena', 'Paras Hospitals', 'rohit.s@paras.com', 'Sector 43', 'Gurgaon', 'Haryana', '122002', 'APPROVED', NOW()),
+('P1040', 'Dr. Anuradha Das', 'Holy Family Hospital', 'anuradha.d@holyfamily.com', 'Okhla Road', 'Delhi', 'Delhi', '110025', 'APPROVED', NOW()),
+('P1041', 'Dr. Deepak Reddy', 'Continental Hospitals', 'deepak.r@continental.com', 'Gachibowli', 'Hyderabad', 'Telangana', '500032', 'APPROVED', NOW()),
+('P1042', 'Dr. Kaveri Nair', 'Columbia Asia', 'kaveri.n@columbia.com', 'Hebbal', 'Bangalore', 'Karnataka', '560024', 'APPROVED', NOW()),
+('P1043', 'Dr. Vivek Sharma', 'Manipal Hospitals', 'vivek.s@manipal.com', 'Old Airport Road', 'Bangalore', 'Karnataka', '560017', 'APPROVED', NOW()),
+('P1044', 'Dr. Reena Paul', 'Motherhood Hospital', 'reena.p@motherhood.com', 'Indiranagar', 'Bangalore', 'Karnataka', '560038', 'APPROVED', NOW()),
+('P1045', 'Dr. Ishita Sen', 'Hiranandani Hospital', 'ishita.s@hiranandani.com', 'Powai', 'Mumbai', 'Maharashtra', '400076', 'APPROVED', NOW());
+
