@@ -1,0 +1,65 @@
+project
+
+1. add appointment
+ -the recipient need to book for a doctor of the provider and choose a particular availability and particular slot is also now 
+ -if the recipient is booked an appointment at a particular time then not allowed to book other appointment for that time duration 
+ -the recipient need to see the eligible appointmentscan possible to book to shown only mean if its 10 and availability is start from 9 to 11 then      availability start from the 10 
+ -the recipient can book the next 10 appointment 
+ -the recipient can not book appointment which are in the past date or the time 
+ -the recipient get an email for the appointment and now can download the slot in pdf the details and can verify the otp now .
+ -the availability need to show past future booked and not slot here now 
+ -no two recipient can appoint to a same slot
+ -maximum appointment 
+ -a date showing 
+
+2. update appointment
+ -same validation as the add appointment 
+
+3. delete appointment
+ -appointment future
+
+4. show past appointment 
+ -read past appointment by date doctorname specialization sorting and pagination here now 
+
+5. show future appointment 
+ -read future appointment based on some search now
+
+
+CREATE TABLE Doctor_availability (
+    availability_id VARCHAR(36) PRIMARY KEY,
+    doctor_id VARCHAR(36) NOT NULL,
+    available_date DATE NOT NULL,
+    start_time TIME NOT NULL,
+    end_time TIME NOT NULL,
+    slot_type ENUM('STANDARD', 'ADHOC') DEFAULT 'STANDARD',
+    max_capacity INT NOT NULL ,
+    patient_window INT GENERATED ALWAYS AS (
+    TIMESTAMPDIFF(MINUTE, start_time, end_time) / max_capacity
+) STORED,
+    is_recurring BOOLEAN DEFAULT FALSE,
+    notes VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+);
+
+CREATE TABLE Appointment (
+    appointment_id VARCHAR(36) PRIMARY KEY,
+    doctor_id VARCHAR(36) NOT NULL,
+    h_id VARCHAR(36) NOT NULL,
+    availability_id VARCHAR(36) NOT NULL,
+    provider_id VARCHAR(36) NOT NULL,
+    requested_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    booked_at TIMESTAMP NULL,
+    cancelled_at TIMESTAMP NULL,
+    completed_at TIMESTAMP NULL,
+    status ENUM('PENDING', 'BOOKED', 'CANCELLED', 'COMPLETED') DEFAULT 'PENDING',
+    slot_no INT NOT NULL ,
+    start TIMESTAMP,
+    en TIMESTAMP,
+    notes TEXT,
+    FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id),
+    FOREIGN KEY (h_id) REFERENCES Recipient(h_id),
+    FOREIGN KEY (availability_id) REFERENCES Doctor_availability(availability_id),
+    FOREIGN KEY (provider_id) REFERENCES Providers(provider_id)
+);
+  
